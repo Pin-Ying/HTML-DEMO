@@ -5,59 +5,7 @@
     <meta charset="UTF-8">
     <title>我愛健身網站</title>
     <!-- . => class; # => id -->
-    <style>
-        body {
-            background-color: rgb(230, 225, 230);
-            font-family: 'Gill Sans', 'Gill Sans MT', 'Tebuchet MS', sans-serif, '微軟正黑體';
-            font-size: 1.5rem;
-            text-align: center;
-        }
-
-        .banner {
-            display: inline-block;
-            width: 30%;
-            background-color: rgb(255, 250, 230);
-            color: rgb(45, 45, 65);
-            font-size: 2rem;
-            margin: 6px 2px;
-            padding: 12px 36px;
-        }
-
-        .slogan {
-            color: rgb(255, 250, 230);
-        }
-
-        #title {
-            background-color: rgb(15, 15, 45);
-            color: rgb(255, 255, 245);
-            font-size: 4rem;
-            font-family: '標楷體';
-            margin: 6px 2px;
-            margin-top: 32px;
-        }
-
-        #bmi-table {
-            background-color: rgb(225, 220, 255);
-            width: 80%;
-            height: 200px;
-            margin: 0 auto;
-            border-collapse: collapse;
-        }
-
-        #bmi-table thead {
-            background-color: rgb(95, 110, 160);
-        }
-
-        #bmi-table th {
-            font-size: 24px;
-            font-weight: bold;
-        }
-
-        #bmi-table tbody {
-            font-size: 20px;
-            padding: 24px;
-        }
-    </style>
+    <link rel="stylesheet" href="./res/style.css">
 
 
 </head>
@@ -70,7 +18,7 @@
         <img src=" ./images/banner.jpg" alt="找不到圖片" width="100%">
     </a>
 
-    <div style="background-color: rgb(20, 40, 75);color: rgb(195, 220, 225)">
+    <div class="text">
         <p>
             <b
                 style="color: rgb(255, 250, 230);">健身，英文稱為workout</b>，健身這兩個字拆開來的意思就是健康身體，通過各種運動方式或方法來增強力量、增加肌肉量、柔韌性、耐力，以及提高協調和控制身體各部分的能力來使我們的身體更強健。
@@ -88,8 +36,7 @@
     </div>
     <hr>
     <div class="banner">健身的10個好處</div>
-    <div
-        style="text-align: left;padding: 12px 36px;background-color: rgb(20, 40, 75);color: rgb(195, 220, 225); border:2px rgb(55, 110, 115) solid">
+    <div class="text">
         <ol type="I">
             <li>增加基礎代謝率</li>
             <li>預防疾病和提高免疫力</li>

@@ -5,10 +5,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BMI計算機</title>
+    <link rel="stylesheet" href="./res/style.css">
+
+    <style>
+        form {
+            width: 30%;
+            margin: auto;
+            text-align: center;
+            background-color: rgb(20, 40, 75);
+            color: rgb(195, 220, 225);
+            border: 2px rgb(55, 110, 115) solid;
+            border-radius: 6px;
+        }
+
+        input,
+        button {
+            width: 50%;
+            height: 30px;
+            margin: 6px 0px;
+            font-size: 1rem;
+
+        }
+
+        @media screen and (max-width:1200px) {
+            form {
+                width: 50%;
+            }
+        }
+
+        @media screen and (max-width:700px) {
+            form {
+                width: 90%;
+            }
+
+            label,
+            input {
+                width: 90%;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <h1 style="color: navy;">BMI計算機</h1>
+    <h1 id="title" style="display: inline-block; width: 50%;">BMI計算機</h1>
     <form action="">
         <label for="username">姓名：</label>
         <input id="username" name="username" type="text" placeholder="NAME"><br>
@@ -20,7 +59,8 @@
         <input id="weight" name="height" type="number" step="0.1" placeholder="WEIGHT"><br>
         <label for="date">生日：</label>
         <input name="date" type="date"><br>
-        <input type="checkbox">記住帳號
+        <input type="checkbox" style="width: 20px;height: 15px; text-align: left;">
+        <label for="checkbox">記住帳號</label>
 
 
 
@@ -28,7 +68,7 @@
             <button>計算結果</button>
         </p>
     </form>
-    <button><a href="/">返回</a></button>
+    <p><a href="/">返回</a></p>
 
 
 </body>

@@ -1,0 +1,59 @@
+body {
+    background-color: rgb(230, 225, 230);
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Tebuchet MS', sans-serif, '微軟正黑體';
+    font-size: 1rem;
+    text-align: center;
+}
+
+.banner {
+    display: inline-block;
+    width: 30%;
+    background-color: rgb(255, 250, 230);
+    color: rgb(45, 45, 65);
+    font-size: 1.5rem;
+    margin: 6px 2px;
+    padding: 12px 36px;
+}
+
+.slogan {
+    color: rgb(255, 250, 230);
+}
+
+.text {
+    text-align: left;
+    padding: 12px 36px;
+    background-color: rgb(20, 40, 75);
+    color: rgb(195, 220, 225);
+    border: 2px rgb(55, 110, 115) solid;
+}
+
+#title {
+    background-color: rgb(15, 15, 45);
+    color: rgb(255, 255, 245);
+    font-size: 2rem;
+    font-family: '標楷體';
+    margin: 6px 2px;
+    margin-top: 32px;
+}
+
+#bmi-table {
+    background-color: rgb(225, 220, 255);
+    width: 80%;
+    height: 200px;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+#bmi-table thead {
+    background-color: rgb(95, 110, 160);
+}
+
+#bmi-table th {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#bmi-table tbody {
+    font-size: 20px;
+    padding: 24px;
+}
