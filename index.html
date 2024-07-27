@@ -4,15 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <title>我愛健身網站</title>
-    <!-- . 代表class -->
+    <!-- . => class; # => id -->
     <style>
-        h2 {
-            background-color: rgb(245, 245, 205);
-            color: rgb(30, 30, 45)
+        body {
+            background-color: rgb(230, 225, 230);
+            font-family: 'Gill Sans', 'Gill Sans MT', 'Tebuchet MS', sans-serif, '微軟正黑體';
+            font-size: 1.5rem;
+            text-align: center;
         }
 
         .banner {
-            color: rgb(46, 89, 133)
+            display: inline-block;
+            width: 30%;
+            background-color: rgb(255, 250, 230);
+            color: rgb(45, 45, 65);
+            font-size: 2rem;
+            margin: 6px 2px;
+            padding: 12px 36px;
+        }
+
+        #title {
+            background-color: rgb(15, 15, 45);
+            color: rgb(255, 255, 245);
+            font-size: 4rem;
+            font-family: '標楷體';
+            margin: 6px 2px;
+            margin-top: 32px;
         }
     </style>
 
@@ -22,14 +39,15 @@
 <!-- 內容顯示區 -->
 
 <body>
-    <h1 style="color: rgb(46, 89, 133)">何謂健身?</h1>
+    <div id="title">何謂健身?</div>
     <a href="">
         <img src=" ./images/banner.jpg" alt="找不到圖片" width="100%">
     </a>
 
-    <div style="background-color: rgb(23, 40, 74);color: rgb(242, 243, 222)">
-        <p style="color: rgb(194, 220, 225);">
-            <b>健身，英文稱為workout</b>，健身這兩個字拆開來的意思就是健康身體，通過各種運動方式或方法來增強力量、增加肌肉量、柔韌性、耐力，以及提高協調和控制身體各部分的能力來使我們的身體更強健。
+    <div style="background-color: rgb(20, 40, 75);color: rgb(195, 220, 225)">
+        <p>
+            <b
+                style="color: rgb(255, 250, 230);">健身，英文稱為workout</b>，健身這兩個字拆開來的意思就是健康身體，通過各種運動方式或方法來增強力量、增加肌肉量、柔韌性、耐力，以及提高協調和控制身體各部分的能力來使我們的身體更強健。
 
         <p>除了塑造好身材，透過健身可以刺激我們身體的肌肉，再搭配飲食的控制，這能大大幫助我們的肌肉量增加，以及讓我們的肌肉更加的結實。</p>
 
@@ -38,26 +56,29 @@
             舞臺上或者是電影螢幕上綻放光彩。
         </em>
         <u>
-            <b>答案就是堅持運動健身!</b>
+            <b style="color: rgb(255, 250, 230);">答案就是堅持運動健身!</b>
         </u>
         </p>
     </div>
     <hr>
-    <h2 class="banner">健身的10個好處</h2>
-    <ol type="I">
-        <li>增加基礎代謝率</li>
-        <li>預防疾病和提高免疫力</li>
-        <li>改善心情</li>
-        <li>改善睡眠</li>
-        <li>增加自信</li>
-        <li>增強記憶力</li>
-        <li>增強心肺能力</li>
-        <li>提升睡眠品質</li>
-        <li>釋放工作的壓力</li>
-        <li>增加肌肉助於減肥</li>
-    </ol>
+    <div class="banner">健身的10個好處</div>
+    <div
+        style="text-align: left;padding: 12px 36px;background-color: rgb(20, 40, 75);color: rgb(195, 220, 225); border:2px rgb(55, 110, 115) solid">
+        <ol type="I">
+            <li>增加基礎代謝率</li>
+            <li>預防疾病和提高免疫力</li>
+            <li>改善心情</li>
+            <li>改善睡眠</li>
+            <li>增加自信</li>
+            <li>增強記憶力</li>
+            <li>增強心肺能力</li>
+            <li>提升睡眠品質</li>
+            <li>釋放工作的壓力</li>
+            <li>增加肌肉助於減肥</li>
+        </ol>
+    </div>
     <hr>
-    <h2 class="banner">好文章連結</h2>
+    <div class="banner">好文章連結</div>
 
     <li>
         <a href="https://www.fe-amart.com.tw/index.php/life-style/life-info/secret-recipe/hero-6" target="_blank">
@@ -86,8 +107,8 @@
     <img src="./images/pic-2.jpg" alt="找不到圖片" width="32%">
     <img src="./images/pic-3.jpg" alt="找不到圖片" width="32%">
 
-    <h2 class="banner">一天所需卡路里</h2>
-    <table border="1">
+    <div class="banner">一天所需卡路里</div>
+    <table border="1" align=center>
         <thead>
             <tr>
                 <th>每天活動量</th>
@@ -125,16 +146,19 @@
         因他的工作為坐辦公室，屬輕量工作，每天攝取熱量應在1300至1625大卡之間(=20~25大卡*65公斤)。
     </p>
     <hr>
-    <iframe width="48%" height="300px" src="https://www.youtube.com/embed/L1BTJsDAWjo"
-        title="7 分鐘居家徒手腹肌訓練【初級版】無裝備｜7 Min Standing Abs workout｜非常適合初學者入門也有效加强核心的訓練｜男生和女生都適合的健身訓練【健身運動】" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    <iframe width="48%" height="300px" src="https://www.youtube.com/embed/YGFPr93uaAA"
-        title="15 分鐘居家徒手腹肌訓練【初級版】無裝備｜15 Min Standing Abs workout｜非常適合初學者入門也有效加强核心的訓練【健身運動】" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    <video width="100%" src="video/sample_video (720p).mp4" controls></video>
-
+    <div class="banner">健身影片</div>
+    <div>
+        <iframe width="48%" height="300px" src="https://www.youtube.com/embed/L1BTJsDAWjo"
+            title="7 分鐘居家徒手腹肌訓練【初級版】無裝備｜7 Min Standing Abs workout｜非常適合初學者入門也有效加强核心的訓練｜男生和女生都適合的健身訓練【健身運動】"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="48%" height="300px" src="https://www.youtube.com/embed/YGFPr93uaAA"
+            title="15 分鐘居家徒手腹肌訓練【初級版】無裝備｜15 Min Standing Abs workout｜非常適合初學者入門也有效加强核心的訓練【健身運動】" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <video width="100%" src="video/sample_video (720p).mp4" controls></video>
+    </div>
 
 </body>
 
